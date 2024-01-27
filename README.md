@@ -69,3 +69,5 @@ on these things), and as a final resort, fork what is immovable.
 If you'd like to contribute towards the effort, simply find an issue you would
 like to help with and just let us know with a reply that you are going to tackle
 it. We will be happy to help you along the way.
+
+There is also a useful list of alternatives [here](./docs/alternatives.md).
