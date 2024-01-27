@@ -14,7 +14,9 @@ filter-array | `Array.prototype.filter` |
 has-own-prop | `Object.hasOwn` in modern engines, `Object.prototype.hasOwnProperty.call(obj, prop` otherwise |
 index-of | `Array.prototype.indexOf` |
 is-even | `(n % 2) === 0` |
+is-nan | `Number.isNaN(obj)` |
 is-npm | `process.env.npm_config_user_agent?.startsWith('npm')` |
+is-number | `typeof obj === 'number'` |
 is-odd | `(n % 2) === 1` |
 is-regexp | `obj instanceof RegExp` or compare to `toString` result to `[object RegExp]` |
 is-string | `typeof obj === 'string'` |
