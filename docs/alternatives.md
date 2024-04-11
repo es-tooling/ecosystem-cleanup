@@ -27,7 +27,6 @@ last-index-of | `Array.prototype.lastIndexOf` |
 left-pad | `String.prototype.padStart` |
 pad-left | `String.prototype.padStart` |
 q | `Promise` | Use native promises
-qs | `URLSearchParams` | `URLSearchParams` is built in to the platform
 query-string | `URLSearchParams` | `URLSearchParams` is built in to the platform
 querystring | `URLSearchParams` | `URLSearchParams` is built in to the platform
 querystringify | `URLSearchParams` | `URLSearchParams` is built in to the platform
