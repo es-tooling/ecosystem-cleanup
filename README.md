@@ -1,8 +1,11 @@
 # JS ecosystem cleanup
 
-This is a place to keep track of the various ongoing efforts of
-providing a cleaner, simpler dependency tree in the JS ecosystem for those
-who are concerned with it.
+As part of the [e18e](https://e18e.dev) initiative, the ecosystem cleanup
+project is a community effort to collaborate on cleaning up technical
+debt in the JS ecosystem.
+
+Our goal is to provide a cleaner, faster and simpler dependency tree in the JS
+ecosystem for those who are concerned with it.
 
 ## The problem
 
