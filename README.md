@@ -24,7 +24,7 @@ The maintainer of the repo was not contacted yet. Create an issue and ask, if cr
 
 There is an open issue for the repo but no PR yet. If the maintainer gave a positive response, you can go ahead and create a PR
 
-<img src="https://img.shields.io/badge/has%20confirmation-DBE1EF?style=flat" alt="has confirmation" style="vertical-align: middle"/>
+<img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/>
 
 The maintainer is welcoming PRs. Feel free to create PRs for all the issues you find
 
@@ -51,10 +51,10 @@ The package in question needs a replacement that we can bring forward. Feel free
 ## Where do I start
 
 - If you like to reach out, look for issues with the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> label and create an issue (or use some other communication channel). Paste the issue you created as answer to tagged issue here
-- If you want to create PRs, look for the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+confirmation%22"><img src="https://img.shields.io/badge/has%20confirmation-DBE1EF?style=flat" alt="has confirmation" style="vertical-align: middle"/></a> label. Paste the PR link in the tagged issue.
+- If you want to create PRs, look for the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a> label. Paste the PR link in the tagged issue.
 - If you want to own the whole chain, go through:
 
-  <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+issue%22"><img src="https://img.shields.io/badge/has%20issue-697830?style=flat" alt="has issue" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+confirmation%22"><img src="https://img.shields.io/badge/has%20confirmation-DBE1EF?style=flat" alt="has confirmation" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+pr%22"><img src="https://img.shields.io/badge/has%20pr-6E4234?style=flat" alt="has pr" style="vertical-align: middle"/></a> -> merged
+  <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+issue%22"><img src="https://img.shields.io/badge/has%20issue-697830?style=flat" alt="has issue" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+pr%22"><img src="https://img.shields.io/badge/has%20pr-6E4234?style=flat" alt="has pr" style="vertical-align: middle"/></a> -> merged
 
 - if you create an issue or pr for an <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22umbrella+issue%22"><img src="https://img.shields.io/badge/umbrella%20issue-30EF5D?style=flat" alt="umbrella issue" style="vertical-align: middle"/></a> issue, update the umbrella issue as well
 
