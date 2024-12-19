@@ -7,70 +7,65 @@ debt in the JS ecosystem.
 Our goal is to provide a cleaner, faster and simpler dependency tree in the JS
 ecosystem for those who are concerned with it.
 
-## The problem
+## How to help
 
-Packages often have dependencies, and those dependencies themselves have
-dependencies, and so on. This is fine and expected with how dependency trees
-are structured.
+All issues on our issue tracker are labeled and a lot of them contain actionable items you can start to work on right away.
+Hence, an explanation of the labels is in order:
 
-However, over the years many of these deepest dependencies are long since
-obsolete utilities, polyfills, and so on. At the time they were introduced,
-they were important and had their use, but are now arguably redundant to
-most of us.
+<img src="https://img.shields.io/badge/umbrella%20issue-30EF5D?style=flat" alt="umbrella issue" style="vertical-align: middle"/>
 
-For example, polyfills for `Array.prototype.includes` are often found
-deep in most projects' dependency trees, and yet this feature has been available
-since Node 6 (released in ~2016).
+A list of repos that contain at least one dependency that can be replaced by a better alternative. Before you submit a PR, create an issue first if no contact has been made yet
 
-Similarly, we have all collected "micro packages" over time without realising
-it. These are very small (often one-liners) packages we depend on to do
-simple pieces of logic the JavaScript language already allows us to do. For
-example, `is-string`, `is-number`, `is-nan`, etc.
+<img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/>
 
-There are many reasons you could argue these are a bad idea. Security,
-complexity, install time, bundle size and so on. We unnecessarily download,
-install and include hundreds of these packages when the platform already
-provides the same functionality.
+The maintainer of the repo was not contacted yet. Create an issue and ask, if creating a PR is welcome
 
-## They have their uses
+<img src="https://img.shields.io/badge/has%20issue-697830?style=flat" alt="has issue" style="vertical-align: middle"/>
 
-Some of these packages do have their use, and a small group of consumers
-strongly disagree with removing them (usually the creators of said packages).
+There is an open issue for the repo but no PR yet. If the maintainer gave a positive response, you can go ahead and create a PR
 
-For example, one primary argument for using the polyfill-like packages is
-that a third-party package can override built-ins and break another package's
-code. To counter this, these packages use a custom implementation/wrapper around
-the native functionality instead of using the native functionality directly
-(since nobody can override the wrapper).
+<img src="https://img.shields.io/badge/has%20confirmation-DBE1EF?style=flat" alt="has confirmation" style="vertical-align: middle"/>
 
-If you need this kind of protection against the way JavaScript works, then of
-course this cleanup is not for you.
+The maintainer is welcoming PRs. Feel free to create PRs for all the issues you find
 
-## The effort
+<img src="https://img.shields.io/badge/has%20pr-6E4234?style=flat" alt="has pr" style="vertical-align: middle"/>
 
-This is not an easy problem to tackle since these packages are so deeply
-embedded in our system, far below the packages we knowingly install day by day.
+A PR has been created and waits to be merged. Nothing to do here for now.
 
-To make things easier, we will be splitting up the work into much smaller
-and more manageable tasks to gradually chip away instead of a big bang solution.
+<img src="https://img.shields.io/badge/pr%20needs%20update-bfd4f2?style=flat" alt="pr needs update" style="vertical-align: middle"/>
 
-Some examples of what we will be doing:
+The PR needs to be updated. Either there was a reponse / review by the maintainer or the PR has merge conflicts
 
-- Remove these packages from popular packages as direct dependencies
-- Fork packages which have officially stated they will never move off these
-packages
-    - Where possible, make these forks track the original source repo (i.e.
-catch up from main when the origin changes).
-- Replace redundant polyfills with native functionality in popular packages
-- Replace these packages with cleaner alternatives
+<img src="https://img.shields.io/badge/blocked-1d76db?style=flat" alt="blocked" style="vertical-align: middle"/>
 
-The main goal is to _contribute_ to the packages we actually use (which depend
-on these things), and as a final resort, fork what is immovable.
+This PR is blocked by some other issue. Check regularly if that issue is resolved
 
-## Contributing
+<img src="https://img.shields.io/badge/rejected-f9d0c4?style=flat" alt="rejected" style="vertical-align: middle"/>
 
-If you'd like to contribute towards the effort, simply find an issue you would
-like to help with and just let us know with a reply that you are going to tackle
-it. We will be happy to help you along the way.
+The PR or the idea of a PR has been rejected by the maintainer. Maybe try again after a few months
 
-A good place to start is the [guide](./docs/guide.md).
+<img src="https://img.shields.io/badge/needs%20alternative-F32096?style=flat" alt="needs alternative" style="vertical-align: middle"/>
+
+The package in question needs a replacement that we can bring forward. Feel free to create one. Maitenance burden is on you!
+
+## Where do I start
+
+- If you like to reach out, look for issues with the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> label and create an issue (or use some other communication channel). Paste the issue you created as answer to tagged issue here
+- If you want to create PRs, look for the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+confirmation%22"><img src="https://img.shields.io/badge/has%20confirmation-DBE1EF?style=flat" alt="has confirmation" style="vertical-align: middle"/></a> label. Paste the PR link in the tagged issue.
+- If you want to own the whole chain, go through:
+
+  <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+issue%22"><img src="https://img.shields.io/badge/has%20issue-697830?style=flat" alt="has issue" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+confirmation%22"><img src="https://img.shields.io/badge/has%20confirmation-DBE1EF?style=flat" alt="has confirmation" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+pr%22"><img src="https://img.shields.io/badge/has%20pr-6E4234?style=flat" alt="has pr" style="vertical-align: middle"/></a> -> merged
+
+- if you create an issue or pr for an <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22umbrella+issue%22"><img src="https://img.shields.io/badge/umbrella%20issue-30EF5D?style=flat" alt="umbrella issue" style="vertical-align: middle"/></a> issue, update the umbrella issue as well
+
+## Issue template
+
+```
+// needs work
+```
+
+## PR template
+
+```
+// needs work
+```
