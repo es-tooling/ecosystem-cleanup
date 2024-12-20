@@ -50,7 +50,7 @@ The package in question needs a replacement that we can bring forward. Feel free
 
 ## Where do I start
 
-- If you like to reach out, look for issues with the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> label and create an issue (or use some other communication channel). Paste the issue you created as answer to tagged issue here
+- If you'd like to reach out, look for issues with the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> label and create an issue (or use some other communication channel). Paste the issue you created as answer to tagged issue here
 - If you want to create PRs, look for the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a> label. Paste the PR link in the tagged issue.
 - If you want to own the whole chain, go through:
 
