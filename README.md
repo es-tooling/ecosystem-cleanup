@@ -24,7 +24,7 @@ The maintainer is welcoming PRs. Feel free to create PRs for all the issues you 
 
 <img src="https://img.shields.io/badge/needs%20alternative-F32096?style=flat" alt="needs alternative" style="vertical-align: middle"/>
 
-The package in question needs a replacement that we can bring forward. Feel free to create one. Maitenance burden is on you!
+The package in question needs a replacement that we can bring forward. Feel free to create one, but beware: its maintenance burden is on you!
 
 ## Where do I start
 
