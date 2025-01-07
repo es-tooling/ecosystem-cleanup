@@ -14,7 +14,9 @@ Here are some examples:
 
 <img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/>
 
-The maintainer of the repo was not contacted yet. Create an issue and ask, if creating a PR is welcome. You can also reach out to the maintainer via other channels but **make sure that contributions are welcome**. We want the maintainers on board and convince them that this is important enough to spend time on.
+The maintainer of the repo was not contacted yet. Create an issue and ask per the repo's contributing guidelines.
+
+If an issue was filed more than a couple months ago and hasn't received activity, you can also reach out to the maintainer via other channels listed on the repo but **make sure that contributions are welcome**. We want the maintainers on board and to convince them that this is important enough to spend time on.
 
 <img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/>
 
