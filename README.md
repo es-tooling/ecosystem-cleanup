@@ -14,11 +14,11 @@ Here are some examples:
 
 <img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/>
 
-The maintainer of the repo was not contacted yet. Create an issue and ask, if creating a PR is welcome
+The maintainer of the repo was not contacted yet. Create an issue and ask, if creating a PR is welcome. You can also reach out to the maintainer via other channels but **make sure that contributions are welcome**. We want the maintainers on board and convince them that this is important enough to spend time on.
 
 <img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/>
 
-The maintainer is welcoming PRs. Feel free to create PRs for all the issues you find
+The maintainer is welcoming PRs. Feel free to create PRs for all the issues you find. **Make sure to follow contribution guidelines!**
 
 <img src="https://img.shields.io/badge/needs%20alternative-F32096?style=flat" alt="needs alternative" style="vertical-align: middle"/>
 
