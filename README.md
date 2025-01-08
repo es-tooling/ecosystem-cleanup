@@ -7,70 +7,37 @@ debt in the JS ecosystem.
 Our goal is to provide a cleaner, faster and simpler dependency tree in the JS
 ecosystem for those who are concerned with it.
 
-## The problem
+## How to help
 
-Packages often have dependencies, and those dependencies themselves have
-dependencies, and so on. This is fine and expected with how dependency trees
-are structured.
+All issues on our issue tracker are labeled and a lot of them contain actionable items you can start to work on right away.
+Here are some examples:
 
-However, over the years many of these deepest dependencies are long since
-obsolete utilities, polyfills, and so on. At the time they were introduced,
-they were important and had their use, but are now arguably redundant to
-most of us.
+<a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a>
 
-For example, polyfills for `Array.prototype.includes` are often found
-deep in most projects' dependency trees, and yet this feature has been available
-since Node 6 (released in ~2016).
+The maintainer of the repo was not contacted yet. Create an issue and ask per the repo's contributing guidelines.
 
-Similarly, we have all collected "micro packages" over time without realising
-it. These are very small (often one-liners) packages we depend on to do
-simple pieces of logic the JavaScript language already allows us to do. For
-example, `is-string`, `is-number`, `is-nan`, etc.
+If an issue was filed more than a couple months ago and hasn't received activity, you can also reach out to the maintainer via other channels listed on the repo but **make sure that contributions are welcome**. We want the maintainers on board and to convince them that this is important enough to spend time on.
 
-There are many reasons you could argue these are a bad idea. Security,
-complexity, install time, bundle size and so on. We unnecessarily download,
-install and include hundreds of these packages when the platform already
-provides the same functionality.
+<a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a>
 
-## They have their uses
+The maintainer is welcoming PRs. Feel free to create PRs for all the issues you find. **Make sure to follow contribution guidelines!**
 
-Some of these packages do have their use, and a small group of consumers
-strongly disagree with removing them (usually the creators of said packages).
+<a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+alternative%22"><img src="https://img.shields.io/badge/needs%20alternative-F32096?style=flat" alt="needs alternative" style="vertical-align: middle"/></a>
 
-For example, one primary argument for using the polyfill-like packages is
-that a third-party package can override built-ins and break another package's
-code. To counter this, these packages use a custom implementation/wrapper around
-the native functionality instead of using the native functionality directly
-(since nobody can override the wrapper).
+The package in question needs a replacement that we can bring forward. Feel free to create one, but beware: its maintenance burden is on you! Before replacing the package in question, ensure you've explored existing alternatives. Prioritize contributing to or improving those alternatives before deciding to create a new package.
 
-If you need this kind of protection against the way JavaScript works, then of
-course this cleanup is not for you.
+Make sure to test the new package thoroughly and promote it within the community to gain visibility and trust. Avoid migrating any repositories to your new package without first double-checking with the community.
 
-## The effort
+## Where do I start
 
-This is not an easy problem to tackle since these packages are so deeply
-embedded in our system, far below the packages we knowingly install day by day.
+- If you'd like to reach out, look for issues with the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> label and create an issue (or use some other communication channel). Paste the issue you created as answer to tagged issue here
+- If you want to create PRs, look for the <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a> label. Paste the PR link in the tagged issue.
+- If you create an issue or pr for an <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22umbrella+issue%22"><img src="https://img.shields.io/badge/umbrella%20issue-30EF5D?style=flat" alt="umbrella issue" style="vertical-align: middle"/></a> issue, update the umbrella issue as well
+- This is not required, but we often try to follow the following process:
 
-To make things easier, we will be splitting up the work into much smaller
-and more manageable tasks to gradually chip away instead of a big bang solution.
+  <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+issue%22"><img src="https://img.shields.io/badge/has%20issue-697830?style=flat" alt="has issue" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a> -> <a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22has+pr%22"><img src="https://img.shields.io/badge/has%20pr-6E4234?style=flat" alt="has pr" style="vertical-align: middle"/></a> -> merged!
 
-Some examples of what we will be doing:
+## Example issues
 
-- Remove these packages from popular packages as direct dependencies
-- Fork packages which have officially stated they will never move off these
-packages
-    - Where possible, make these forks track the original source repo (i.e.
-catch up from main when the origin changes).
-- Replace redundant polyfills with native functionality in popular packages
-- Replace these packages with cleaner alternatives
-
-The main goal is to _contribute_ to the packages we actually use (which depend
-on these things), and as a final resort, fork what is immovable.
-
-## Contributing
-
-If you'd like to contribute towards the effort, simply find an issue you would
-like to help with and just let us know with a reply that you are going to tackle
-it. We will be happy to help you along the way.
-
-A good place to start is the [guide](./docs/guide.md).
+- dom-testing-library: https://github.com/testing-library/dom-testing-library/issues/1340
+- webpack-dev-server: https://github.com/webpack/webpack-dev-server/issues/5368
