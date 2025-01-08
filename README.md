@@ -12,19 +12,21 @@ ecosystem for those who are concerned with it.
 All issues on our issue tracker are labeled and a lot of them contain actionable items you can start to work on right away.
 Here are some examples:
 
-<img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/>
+<a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+first+contact%22"><img src="https://img.shields.io/badge/needs%20first%20contact-b60205?style=flat" alt="needs first contact" style="vertical-align: middle"/></a>
 
 The maintainer of the repo was not contacted yet. Create an issue and ask per the repo's contributing guidelines.
 
 If an issue was filed more than a couple months ago and hasn't received activity, you can also reach out to the maintainer via other channels listed on the repo but **make sure that contributions are welcome**. We want the maintainers on board and to convince them that this is important enough to spend time on.
 
-<img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/>
+<a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22accepts+prs%22"><img src="https://img.shields.io/badge/accepts%20prs-DBE1EF?style=flat" alt="accepts prs" style="vertical-align: middle"/></a>
 
 The maintainer is welcoming PRs. Feel free to create PRs for all the issues you find. **Make sure to follow contribution guidelines!**
 
-<img src="https://img.shields.io/badge/needs%20alternative-F32096?style=flat" alt="needs alternative" style="vertical-align: middle"/>
+<a href="https://github.com/es-tooling/ecosystem-cleanup/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+alternative%22"><img src="https://img.shields.io/badge/needs%20alternative-F32096?style=flat" alt="needs alternative" style="vertical-align: middle"/></a>
 
-The package in question needs a replacement that we can bring forward. Feel free to create one, but beware: its maintenance burden is on you!
+The package in question needs a replacement that we can bring forward. Feel free to create one, but beware: its maintenance burden is on you! Before replacing the package in question, ensure you've explored existing alternatives. Prioritize contributing to or improving those alternatives before deciding to create a new package.
+
+Make sure to test the new package thoroughly and promote it within the community to gain visibility and trust. Avoid migrating any repositories to your new package without first double-checking with the community.
 
 ## Where do I start
 
