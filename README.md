@@ -1,11 +1,19 @@
-# JS ecosystem cleanup
+# e18e ecosystem issues
 
-As part of the [e18e](https://e18e.dev) initiative, the ecosystem cleanup
-project is a community effort to collaborate on cleaning up technical
-debt in the JS ecosystem.
+As part of the [e18e](https://e18e.dev) initiative and community, this
+repository is a place to track issues and contributions to projects across
+the ecosystem.
 
-Our goal is to provide a cleaner, faster and simpler dependency tree in the JS
-ecosystem for those who are concerned with it.
+These contributions and issues may involve any number of the areas e18e
+focuses on. For example, many of the issues are `cleanup`, but some also
+contribute to `speedup`.
+
+## Ecosystem clean up
+
+This repository started life as the `ecosystem-cleanup` project, but has since
+outgrown that as the community has gone beyond only cleanup contributions. It
+has also been officially adopted into the e18e organisation as the primary
+issue tracker.
 
 ## How to help
 
