@@ -8,7 +8,7 @@ These contributions and issues may involve any number of the areas e18e
 focuses on. For example, many of the issues are `cleanup`, but some also
 contribute to `speedup`.
 
-# Ecosystem clean up
+## Ecosystem clean up
 
 This repository started life as the `ecosystem-cleanup` project, but has since
 outgrown that as the community has gone beyond only cleanup contributions. It
